@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ujala Kabab - Thanksgiving & Christmas Catering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e8b4e6f2c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Ujala Kabab"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#catering">Catering</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <picture>
+            <source media="(min-width: 768px)" srcset="assets/hero.jpg">
+            <img src="assets/hero.jpg" alt="Family celebrating Thanksgiving & Christmas">
+        </picture>
+        <div class="hero-overlay">
+            <h1 class="hero-title">Thanksgiving &amp; Christmas Catering</h1>
+            <p class="hero-subtitle">Bring home authentic Indo-Pakistani food and celebrate with your family</p>
+            <a href="#catering" class="btn-primary">Order Your Tray</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Festive Menu</h2>
+            <p class="section-intro">Perfect for your holiday celebrations</p>
+            
+            <div class="menu-grid">
+                <article class="menu-item">
+                    <h3>Chicken Biryani</h3>
+                    <p>Fragrant basmati rice with tender chicken, saffron, and aromatic spices</p>
+                </article>
+                <article class="menu-item">
+                    <h3>Lamb Karahi</h3>
+                    <p>Slow-cooked lamb in spicy tomato-onion gravy</p>
+                </article>
+                <article class="menu-item">
+                    <h3>Vegetable Pulao</h3>
+                    <p>Seasonal veggies mixed with lightly spiced rice</p>
+                </article>
+                <article class="menu-item">
+                    <h3>Chicken Tikka</h3>
+                    <p>Char-grilled marinated chicken cubes</p>
+                </article>
+                <article class="menu-item">
+                    <h3>Samosas (6 pcs)</h3>
+                    <p>Golden pastry filled with spiced potatoes & peas</p>
+                </article>
+                <article class="menu-item">
+                    <h3>Gulab Jamun (4 pcs)</h3>
+                    <p>Soft milk-based dumplings in rose-scented syrup</p>
+                </article>
+                <article class="menu-item">
+                    <h3>Naan Bread</h3>
+                    <p>Freshly baked traditional flatbread</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section id="catering" class="section">
+        <div class="container">
+            <h2 class="section-title">Catering Trays - $120 each</h2>
+            <p>Each tray serves 8-10 guests</p>
+            
+            <div class="catering-box">
+                <div class="catering-info">
+                    <p><strong>Perfect for holiday gatherings</strong></p>
+                    <p>Each tray includes:</p>
+                    <ul>
+                        <li>2kg of main dish (your choice)</li>
+                        <li>2kg of side rice/pulao</li>
+                        <li>4 pieces of samosas</li>
+                        <li>Fresh salad</li>
+                        <li>Dessert of your choice</li>
+                    </ul>
+                </div>
+
+                <form id="order-form" class="order-form">
+                    <h3>Reserve Your Holiday Tray</h3>
+                    
+                    <label for="cust-name">Full Name</label>
+                    <input type="text" id="cust-name" name="name" required>
+                    
+                    <label for="cust-email">Email Address</label>
+                    <input type="email" id="cust-email" name="email" required>
+                    
+                    <label for="cust-phone">Phone Number</label>
+                    <input type="tel" id="cust-phone" name="phone" required>
+                    
+                    <label for="cust-date">Event Date</label>
+                    <input type="date" id="cust-date" name="date" required>
+                    
+                    <label for="cust-quantity">Number of Trays</label>
+                    <input type="number" id="cust-quantity" name="quantity" min="1" value="1" required>
+                    
+                    <label for="cust-message">Special Requests / Menu Choices</label>
+                    <textarea id="cust-message" name="message" rows="3"></textarea>
+                    
+                    <label for="discount-code">Discount Code (if applicable)</label>
+                    <input type="text" id="discount-code" name="discount">
+                    
+                    <button type="submit" class="btn-primary">Submit Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Easter Egg Element -->
+    <div class="easter-egg">
+        <i class="fas fa-gift"></i>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Ujala Kabab Catering</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
